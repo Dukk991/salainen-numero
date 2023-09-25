@@ -1,0 +1,24 @@
+/*3. Luo sovellus joka:
+• Kysyy käyttäjältä salanumeron
+• Jos salanumero on 17, sovellus onnittelee käyttäjää onnistuneesta valinnasta ja
+ohjelma päättyy
+Jos käyttäjän syöttämä numero ei ole 17, sovellus kysyy numeroa uudestaan. (Käytä whiletai do-while -toistorakennetta) */
+
+#include <stdio.h>
+
+int main(){
+    
+    int numberC;
+    
+    do {
+        printf("\nPassnumber: \n");
+        
+        scanf("%d", &numberC);
+        
+        if (numberC==17) {
+            printf("\nOiken meni\n");
+        }
+        
+    } while (numberC!=17);
+  return 0;
+}
